@@ -1,1 +1,18 @@
-prueba de fichero
+#!/usr/bin/python
+import hashlib
+arch = open('datos.csv','r')
+for lineas in arch:
+	datos = lineas.split(',')
+	idusuario = datos[0]
+	passwd = datos[1]
+	hash = hashlib.md5(passwd).hexdigest()
+	print "generando hash para el url..."
+	print "https://urlficticia.com/idusuario/ %s" % (hash)
+	
+	
+
+	
+	
+	
+	
+	
